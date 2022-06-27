@@ -1,45 +1,20 @@
-<?php
-    
-    $categorias = [];
-    $categorias[] = 'infantil';
-    $categorias[] = 'adolescente';
-    $categorias[] = 'adulto';
+<!DOCTYPE html>
 
-//    print_r($categorias);
-//    echo "</br>";
+        
+<head>
+    <meta charset="utf-8">
+    <title>Formulário Natação</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+</head>
+<body>
+    <form action="script.php" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome">
 
-//    for ($i = 0; $i < count($categorias); $i++){
-//        echo $i, "</br>";
-//    }
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" name="idade" placeholder="Idade">
+        <input type="submit" value="Submit">
 
-//    $nome = "Ícaro";
-//    $idade = 18;
-
-//    var_dump($nome);
-//    var_dump($idade);
-
-
-
-    if ($idade >= 0 && $idade <= 12){
-        for ($i = 0; $i < count($categorias); $i++){
-            if ($categorias[$i] == 'infantil'){
-                echo "categoria: ", $categorias[$i], "</br>";
-            }
-        }
-    }
-    if ($idade >= 13 && $idade <= 18){
-        for ($i = 0; $i < count($categorias); $i++){
-            if ($categorias[$i] == 'adolescente'){
-                echo "categoria: ", $categorias[$i], "</br>";
-            }
-        }
-    }
-    if ($idade >= 19 ){
-        for ($i = 0; $i < count($categorias); $i++){
-            if ($categorias[$i] == 'adulto'){
-                echo "categoria: ", $categorias[$i], "</br>";
-            }
-        }
-    }
-    
+    </form>
+</body>
